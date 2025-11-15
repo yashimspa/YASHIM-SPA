@@ -23,7 +23,7 @@
         opacity: 0.92;
     }
 
-    /* النص الترحيبي (ثابت بدون حركة) */
+    /* النص الترحيبي */
     .welcome-strip {
         width: 100%;
         margin-top: 10px;
@@ -34,7 +34,7 @@
         padding: 10px 0;
     }
 
-    /* الإيقونات */
+    /* الإيقونات بدون فلتر */
     .icons {
         margin-top: 20px;
         display: flex;
@@ -44,10 +44,9 @@
     }
 
     .icons a img {
-        width: 75px;
-        height: 75px;
-        opacity: 0.9;
-        filter: brightness(0) saturate(100%) invert(29%) sepia(22%) saturate(350%) hue-rotate(25deg) brightness(80%);
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
     }
 
     /* خريطة جوجل */
@@ -81,12 +80,12 @@
 <!-- اللوجو -->
 <img src="logo.png" class="logo" alt="Yashim Spa Logo">
 
-<!-- النص الترحيبي الثابت -->
+<!-- النص الترحيبي -->
 <div class="welcome-strip">
     أهلاً بكم في مركز يشم سبا… وجهتكم للاسترخاء والعناية الفاخرة. يسعدنا استقبالكم وتقديم أفضل خدمات العناية بالجسم والرفاهية. موقعنا الجديد بانتظاركم بكل حب.
 </div>
 
-<!-- الإيقونات -->
+<!-- الإيقونات الأصلية بدون فلتر -->
 <div class="icons">
 
     <a href="https://www.instagram.com/yashim.spa" target="_blank">
@@ -109,21 +108,18 @@
         <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png">
     </a>
 
-    <!-- أيقونة الموقع -->
     <a href="https://maps.app.goo.gl/56KDGug2hh4ZfEcH6?g_st=ipc" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/535/535239.png">
     </a>
 
 </div>
 
-<!-- خريطة الموقع (محدثة) -->
+<!-- الخريطة -->
 <div class="map-container">
-    <iframe 
-        src="https://www.google.com/maps?q=26.355508,43.955125&hl=ar&z=17&output=embed">
-    </iframe>
+    <iframe src="https://www.google.com/maps?q=26.355508,43.955125&hl=ar&z=17&output=embed"></iframe>
 </div>
 
-<!-- فوتر -->
+<!-- الفوتر -->
 <footer>
     © جميع الحقوق محفوظة يشم سبا | Yashim Spa
 </footer>
