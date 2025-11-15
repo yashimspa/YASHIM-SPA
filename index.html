@@ -23,31 +23,18 @@
         opacity: 0.92;
     }
 
-    /* شريط الترحيب المتحرك */
+    /* النص الترحيبي (ثابت بدون حركة) */
     .welcome-strip {
         width: 100%;
-        overflow: hidden;
-        white-space: nowrap;
-        box-sizing: border-box;
         margin-top: 10px;
-        margin-bottom: 25px;
-    }
-
-    .welcome-text {
-        display: inline-block;
-        padding-left: 100%;
-        animation: scroll 15s linear infinite;
+        margin-bottom: 20px;
         font-size: 22px;
         color: #494424;
         font-weight: 500;
+        padding: 10px 0;
     }
 
-    @keyframes scroll {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-100%); }
-    }
-
-    /* الإيقونات (نسخة واضحة بدون فلتر) */
+    /* الإيقونات */
     .icons {
         margin-top: 20px;
         display: flex;
@@ -60,7 +47,6 @@
         width: 75px;
         height: 75px;
         opacity: 0.9;
-        /* تحويل الصورة إلى اللون المطلوب */
         filter: brightness(0) saturate(100%) invert(29%) sepia(22%) saturate(350%) hue-rotate(25deg) brightness(80%);
     }
 
@@ -95,11 +81,9 @@
 <!-- اللوجو -->
 <img src="logo.png" class="logo" alt="Yashim Spa Logo">
 
-<!-- الشريط الترحيبي -->
+<!-- النص الترحيبي الثابت -->
 <div class="welcome-strip">
-    <div class="welcome-text">
-        ✨ أهلاً بكم في مركز يشم سبا… وجهتكم للاسترخاء والعناية الفاخرة. يسعدنا استقبالكم وتقديم أفضل خدمات العناية بالجسم والرفاهية. موقعنا الجديد بانتظاركم بكل حب ✨
-    </div>
+    أهلاً بكم في مركز يشم سبا… وجهتكم للاسترخاء والعناية الفاخرة. يسعدنا استقبالكم وتقديم أفضل خدمات العناية بالجسم والرفاهية. موقعنا الجديد بانتظاركم بكل حب.
 </div>
 
 <!-- الإيقونات -->
@@ -125,16 +109,18 @@
         <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png">
     </a>
 
-    <!-- أيقونة الموقع الجديدة -->
-    <a href="https://maps.app.goo.gl/JqwwhuzodirNG9kM6?g_st=ipc" target="_blank">
+    <!-- أيقونة الموقع -->
+    <a href="https://maps.app.goo.gl/56KDGug2hh4ZfEcH6?g_st=ipc" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/535/535239.png">
     </a>
 
 </div>
 
-<!-- خريطة الموقع -->
+<!-- خريطة الموقع (محدثة) -->
 <div class="map-container">
-    <iframe src="https://www.google.com/maps?q=26.367311,43.960556&hl=ar&z=16&output=embed"></iframe>
+    <iframe 
+        src="https://www.google.com/maps?q=26.355508,43.955125&hl=ar&z=17&output=embed">
+    </iframe>
 </div>
 
 <!-- فوتر -->
